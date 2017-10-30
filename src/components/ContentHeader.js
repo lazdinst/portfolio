@@ -6,6 +6,7 @@ import Clouds from './Clouds'
 import SocialMedia from './SocialMedia'
 import Skyline from './Skyline'
 import WorkExperience from './WorkExperience'
+import Footer from './Footer'
 import {
   Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
 } from 'semantic-ui-react'
@@ -99,6 +100,7 @@ export default class ContentHeader extends Component {
             </Container>
           </Menu>
         </Visibility>
+        <Footer />
       </div>
     );
   }

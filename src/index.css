@@ -30,7 +30,7 @@ body, html {
 .tmoney {
   color: #FFFFFF;
   text-transform: uppercase;
-  margin-top: 15%;
+  margin-top: 8%;
   width: 100%;
   text-align: center;
   position: relative;
@@ -234,6 +234,7 @@ to align it properly */
 
 .wrapper-earth {
   text-align: center;
+  padding-bottom: 20vh;
 }
 
 .earth {
