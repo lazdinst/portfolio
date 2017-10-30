@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import _ from 'lodash'
 import { summaryContent, profileImage } from '../data/summary';
 import Space from './Space'
+import Clouds from './Clouds'
+import SocialMedia from './SocialMedia'
+import Skyline from './Skyline'
+import WorkExperience from './WorkExperience'
 import {
   Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
 } from 'semantic-ui-react'
@@ -35,9 +39,7 @@ export default class ContentHeader extends Component {
 
     if (!overlayRect) this.setState({ overlayRect: _.pick(c.getBoundingClientRect(), 'height', 'width') })
   }
-
   stickTopMenu = () => this.setState({ menuFixed: true })
-
   unStickTopMenu = () => this.setState({ menuFixed: false })
 
   render() {
@@ -52,30 +54,11 @@ export default class ContentHeader extends Component {
             <div className="tmoney-summary">
               {summaryText}
             </div>
-            <div className="wrapper-social">
-              <ul>
-                <li className="linkedin"><Icon className="icon-linkedin" name="linkedin" aria-hidden="true"></Icon></li>
-                <li className="github"><Icon className="icon-github" name="github" aria-hidden="true"></Icon></li>
-                <li className="angellist"><Icon className="icon-angellist" name="angellist" aria-hidden="true"></Icon></li>
-                <li className="google"><Icon className="icon-google" name="google" aria-hidden="true"></Icon></li>
-                <li className="resume"><Icon className="icon-resume" name="wordpress forms" aria-hidden="true"></Icon></li>
-              </ul>
-            </div>
+            <SocialMedia />
           </Container>
         </div>
-        <div className="paralax-cloud">
-          <div className="wrapper-earth">
-              <img className="earth" src='https://i.imgur.com/ZyzXD0g.png' />
-          </div>
-          <div className="paralax-title">Parallax Demo</div>
-          <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-        </div>
-        <div className="city-skyline">
-          <div className="caption">
-            <span className="border" style={{backgroundColor: "transparent", fontSize: "25px", color: "#f7f7f7"}}>LESS HEIGHT</span>
-          </div>
-        </div>
-
+        <Clouds />
+        <WorkExperience />
         <Visibility
           onBottomPassed={this.stickTopMenu}
           onBottomVisible={this.unStickTopMenu}
