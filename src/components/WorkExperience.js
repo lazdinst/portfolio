@@ -6,7 +6,7 @@ class WorkExperience extends Component {
     return (
       <Container>
         <div className="paralax-title">
-          Work Experience
+          Experience
         </div>
         <Grid>
           <Grid.Column width={16}>

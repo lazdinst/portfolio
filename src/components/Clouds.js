@@ -5,9 +5,9 @@ import { Container, Card, Image, Grid, Segment, Icon, Label, Header } from 'sema
 function Clouds() {
   return (
     <div className="paralax-cloud">
-      <div className="wrapper-earth">
+      {/* <div className="wrapper-earth">
         <img className="earth" src='https://i.imgur.com/ZyzXD0g.png' />
-      </div>
+      </div> */}
       <Container>
       <Grid columns={2} stackable>
       <Grid.Row columns={3}>
@@ -22,7 +22,7 @@ function Clouds() {
             </h5>
             <ul>
               <li>React</li>
-              <li><Redux/li>
+              <li>Redux</li>
               <li>HTML5</li>
             </ul>
           </Segment>

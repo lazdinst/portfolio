@@ -66,7 +66,7 @@ it should always be at the center of the browser */
 }
 
 /* Style the Un-order list by setting its list-style to none */
-.wrapper-social ul {
+.wrapper-social div {
   list-style: none;
   padding: 0;
   display: inline-block;
@@ -75,7 +75,7 @@ it should always be at the center of the browser */
 /* Style the list items inside the UL list, by setting its width, height and line-height 
   and float them to left and set its border and border-radius.
  */
-.wrapper-social ul li {
+.wrapper-social div span {
   width: 4rem;
   height: 4rem;
   line-height: 3rem;
@@ -84,13 +84,13 @@ it should always be at the center of the browser */
   cursor: pointer;
   border-radius: 50%;
   border: 5px solid #D8E2DC;
-  float: left;
+  display: inline-block;
   transition: all 0.5s ease;
 }
 
 /* Style the icons by setting its color and margin-top value to 20px 
 to align it properly */
-.wrapper-social ul li .icon {
+.wrapper-social div span .icon {
   margin: 0;
   color: #fff;
   margin-top: 2%;
@@ -100,7 +100,7 @@ to align it properly */
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
-.wrapper-social ul li:hover.github {
+.wrapper-social div span:hover.github {
   border: 5px solid #7000ff;
   box-shadow: 0 0 15px #7000ff;
   transition: all 0.5s ease;
@@ -114,14 +114,14 @@ to align it properly */
   transform: translateY(-10px);
 }
 
-.wrapper-social ul li:hover .icon-github {
+.wrapper-social div span:hover .icon-github {
   color: #7000ff;
   text-shadow: 0 0 15px #7000ff;
   transition: all 0.5s ease;
 }
 
 /*twitter*/
-.wrapper-social ul li:hover.linkedin {
+.wrapper-social div span:hover.linkedin {
   border: 5px solid #0084bf;
   box-shadow: 0 0 15px #0084bf;
   transition: all 0.5s ease;
@@ -135,14 +135,14 @@ to align it properly */
   transform: translateY(-10px);
 }
 
-.wrapper-social ul li:hover .icon-linkedin {
+.wrapper-social div span:hover .icon-linkedin {
   color: #0084bf;
   text-shadow: 0 0 15px #0084bf;
   transition: all 0.5s ease;
 }
 
 /* instagram */
-.wrapper-social ul li:hover.angellist {
+.wrapper-social div span:hover.angellist {
   border: 5px solid #bc2a8d;
   box-shadow: 0 0 15px #bc2a8d;
   transition: all 0.5s ease;
@@ -156,14 +156,14 @@ to align it properly */
   transform: translateY(-10px);
 }
 
-.wrapper-social ul li:hover .icon-angellist {
+.wrapper-social div span:hover .icon-angellist {
   color: #bc2a8d;
   text-shadow: 0 0 15px #bc2a8d;
   transition: all 0.5s ease;
 }
 
 /* google */
-.wrapper-social ul li:hover.google {
+.wrapper-social div span:hover.google {
   border: 5px solid #dc5046;
   box-shadow: 0 0 15px #dc5046;
   transition: all 0.5s ease;
@@ -177,14 +177,14 @@ to align it properly */
   transform: translateY(-10px);
 }
 
-.wrapper-social ul li:hover .icon-google {
+.wrapper-social div span:hover .icon-google {
   color: #dc5046;
   text-shadow: 0 0 15px #dc5046;
   transition: all 0.5s ease;
 }
 
 /* whatsapp */
-.wrapper-social ul li:hover.resume {
+.wrapper-social div span:hover.resume {
   border: 5px solid #4dc247;
   box-shadow: 0 0 15px #4dc247;
   transition: all 0.5s ease;
@@ -198,7 +198,7 @@ to align it properly */
   transform: translateY(-10px);
 }
 
-.wrapper-social ul li:hover .icon-resume {
+.wrapper-social div span:hover .icon-resume {
   color: #4dc247;
   text-shadow: 0 0 15px #4dc247;
   transition: all 0.5s ease;
@@ -291,13 +291,12 @@ h3 {
 
 .paralax-cloud {
   color: #777;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f87e2+0,53cbf1+60,87e0fd+100 */
-  background-color: rgb(79,135,226); /* Old browsers */
-  background-color: -moz-linear-gradient(top,  rgba(79,135,226,1) 0%, rgba(83,203,241,1) 60%, rgba(135,224,253,1) 100%); /* FF3.6-15 */
-  background-color: -webkit-linear-gradient(top,  rgba(79,135,226,1) 0%,rgba(83,203,241,1) 60%,rgba(135,224,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background-color: linear-gradient(to bottom,  rgba(79,135,226,1) 0%,rgba(83,203,241,1) 60%,rgba(135,224,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f87e2', endColorstr='#87e0fd',GradientType=0 ); /* IE6-9 */
-  background-image: url("https://i.imgur.com/KqjNARz.png");
+  background-color: #FFF;
+  /* background-color: -moz-linear-gradient(top,  rgba(79,135,226,1) 0%, rgba(83,203,241,1) 60%, rgba(135,224,253,1) 100%);
+  background-color: -webkit-linear-gradient(top,  rgba(79,135,226,1) 0%,rgba(83,203,241,1) 60%,rgba(135,224,253,1) 100%);
+  background-color: linear-gradient(to bottom,  rgba(79,135,226,1) 0%,rgba(83,203,241,1) 60%,rgba(135,224,253,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f87e2', endColorstr='#87e0fd',GradientType=0 ); */
+  /* background-image: url("https://i.imgur.com/KqjNARz.png"); */
   text-align:center;
   padding: "0rem 0rem 0rem 0rem";
   text-align: justify;
